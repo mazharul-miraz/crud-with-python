@@ -11,10 +11,10 @@ body{
 }
 
 
-.table td, .table th {
+.view-table td, .view-table th {
     border-bottom: 0;
     padding: 5px 10px;
-    border-right: 1px solid #35BF5C;
+    border-right: 1px solid #5755d9;
 }
 
 .table tbody tr.active, .table.table-striped tbody tr.active {
@@ -43,8 +43,8 @@ body{
     margin: 10px 0px 25px 0;
 }
 
-.table  tr {
-    border: 1px solid #35BF5C;
+.view-table tr {
+    border: 1px solid #5755d9;
 }
 
 
@@ -55,4 +55,16 @@ body{
 
 .insert-data {
     margin: 50px 0;
+}
+
+.ins-table{
+    border-collapse: unset;
+  	 border: none;
+    padding: 4px 10px;
+    border: 1px solid #5755d9;
+}
+
+.ins-table td, .ins-table th {
+    padding: 7px 0;
+     border-bottom:none;
 }
