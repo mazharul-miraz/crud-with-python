@@ -9,3 +9,50 @@ body{
     margin: 90px auto 30px auto;
     background: #fff;
 }
+
+
+.table td, .table th {
+    border-bottom: 0;
+    padding: 5px 10px;
+    border-right: 1px solid #35BF5C;
+}
+
+.table tbody tr.active, .table.table-striped tbody tr.active {
+    background:#bedae6;
+}
+
+
+.user-data {
+    width: 80%;
+    margin: 90px auto 30px auto;
+    background: #fff;
+    padding: 30px 20px;
+}
+
+.navbar {
+    background: #fff;
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    padding: 10px 8px;
+}
+
+.navbar h5 {
+    margin-top: 7px;
+}
+.con {
+    float: right;
+    margin: 10px 0px 25px 0;
+}
+
+.table  tr {
+    border: 1px solid #35BF5C;
+}
+
+
+
+.insert-data{
+
+}
+
+.insert-data {
+    margin: 50px 0;
+}

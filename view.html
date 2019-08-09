@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>F L A S K [CRUD] A P P</title>
+	<title>F L A S K || CRUD</title>
 	<link rel="stylesheet" type="text/css" href="spectre.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
 
-<div class="container">
-	<div class="column col-auto">
+<div class="column col-12">
+	<div class="column col-12">
 		<header class="navbar">
 		  <section class="navbar-section">
 		    <a href="#" class="btn btn-link">Docs</a>
@@ -29,7 +29,14 @@
 
     <div class="column col-12">
     	<div class="user-data">
-    		<table class="table">
+
+    		<div class="con">
+    			<button class="btn" href="#modal-id">Add New Record</button>
+    			<button class="btn">Delete </button>
+    			<button class="btn">Edit</button>
+    		</div>
+
+    		<table class="table" style="border: 1px solid #e7e7e7;">
 			  <thead>
 			    <tr>
 			    	<th>Name</th>
@@ -40,19 +47,19 @@
 			    </tr>
 			  </thead>
 			  <tbody>
-			    <tr class="active">
+			    <tr>
 			      <td>kate middleton</td>
 			      <td>info@middleton.com</td>
 			      <td>Catherine, Duchess of Cambridge</td>
 			      <td>(+47) 478544 64)</td>
-			      <td>Delete</td>
+			      <td>Edit</td>
 			    </tr>
-			     <tr class="">
+			     <tr>
 			      <td>maniac garage</td>
 			      <td>contact@garage.com</td>
 			      <td>Catherine, Duchess of Cambridge</td>
 			      <td>(+88) 45874 64)</td>
-			      <td>Delete</td>
+			      <td>Edit</td>
 			    </tr>
 			  </tbody>
 			</table>
@@ -60,7 +67,6 @@
     </div>
   </div>
 </div>
-
 
 </body>
 </html>
