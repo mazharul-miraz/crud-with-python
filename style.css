@@ -1,0 +1,11 @@
+{*margin: 0;padding: 0}
+
+body{
+	background-color: #FAFAFA
+}
+
+.user-data{
+    width: 80%;
+    margin: 90px auto 30px auto;
+    background: #fff;
+}
