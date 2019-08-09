@@ -43,7 +43,7 @@ body{
     margin: 10px 0px 25px 0;
 }
 
-.view-table tr {
+ tr {
     border: 1px solid #5755d9;
 }
 
@@ -57,14 +57,20 @@ body{
     margin: 50px 0;
 }
 
-.ins-table{
+.table{
     border-collapse: unset;
   	 border: none;
     padding: 4px 10px;
-    border: 1px solid #5755d9;
+    border: none;
+    border-collapse: none !important;
 }
 
-.ins-table td, .ins-table th {
+ td,th {
     padding: 7px 0;
      border-bottom:none;
+}
+
+.table td, .table th {
+    border: 1px solid #5755d9;
+    padding: 7px 19px;
 }
