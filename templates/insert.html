@@ -2,17 +2,15 @@
 <html>
 <head>
 	<title>INSERT</title>
-	<link rel="stylesheet" type="text/css" href="spectre.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/spectre.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
 </head>
 <body>
-
-
 <div class="column col-12">
 	<div class="column col-12">
 		<header class="navbar">
 		  <section class="navbar-section">
-		    <a href="#" class="btn btn-link">Home</a>
+		    <a href="/view.html" class="btn btn-link">Home</a>
 		  </section>
 		  <section class="navbar-center">
 		    <h5>FLASK CRUD</h5>
@@ -35,7 +33,7 @@
 			  </tr>
 			  <tr>
 			    <td>Email</td>
-			    <td><input class="form-input" type="email"  placeholder="info@example.com	"></td>
+			    <td><input class="form-input" type="email"  placeholder="info@example.com"></td>
 			  </tr>
 			  	<tr>
 			    <td>Address </td>

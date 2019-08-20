@@ -1,0 +1,15 @@
+Fileserver/
+    config.py
+    requirements.txt
+    run.py
+    setup.py
+    app/
+        __init__.py
+        static/
+            css/
+            img/
+            js/
+        templates/
+            formAction.html
+            formSubmit.html
+            index.html
