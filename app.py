@@ -1,5 +1,14 @@
 from flask import Flask
-from flask import render_template,  url_for, redirect, render_template
+from flask import render_template,  url_for, redirect, render_template, request
+from pymongo import MongoClient
+
+
+
+client = MongoClient()
+client = MongoClient('localhost', 27017)
+db = client.pycrud
+
+
 
 
 
@@ -10,9 +19,13 @@ def appview():
     return render_template('view.html')
 
 
-@app.route('/insert')
+@app.route('/insert', methods =['POST','GET'])
 def insert():
-    return render_template('insert.html')
+    if request.method == 'POST':
+        return "this is a post request"
+    else:
+        return "this is a get request"
+    
 
 
 @app.route('/update')
@@ -27,4 +40,4 @@ def login():
 
 
 if __name__ == '__main__':
-   app.run()
+   app.run(debug=True)
