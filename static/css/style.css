@@ -42,9 +42,7 @@ body{
     float: right;
     margin: 10px 10px 25px 0;
 }
- tr {
-    border: 1px solid #5755d9;
-}
+
 
 
 
@@ -70,7 +68,6 @@ body{
 }
 
 .table td, .table th {
-    border: 1px solid #5755d9;
     padding: 7px 19px;
 }
 
