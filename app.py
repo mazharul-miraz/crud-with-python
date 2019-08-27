@@ -9,9 +9,6 @@ client = MongoClient('localhost', 27017)
 db = client.pycrud
 
 
-
-
-
 app = Flask(__name__)
 
 @app.route('/')
@@ -22,7 +19,7 @@ def appview():
 @app.route('/insert', methods =['POST','GET'])
 def insert():
     if request.method == 'POST':
-        return "this is a post request"
+        return render_template('insert.html')
     else:
         return "this is a get request"
     

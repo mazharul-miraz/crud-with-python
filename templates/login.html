@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>LOG IN</title>	
-	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/spectre.css')}}">
-	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+    <title>LOG IN</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
 </head>
+
 <body>
 
+    <div class="wapper">
 
+        <form action="/action_page.php">
+            First name:<br>
+            <input type="text" name="firstname" value="Mickey">
+            <br> Last name:<br>
+            <input type="text" name="lastname" value="Mouse">
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+    </div>
 
 </body>
+
 </html>
