@@ -7,14 +7,20 @@
 </head>
 
 <body>
-    <div class="app-main">
-
-        <form action="/insert" method="POST">
-            <input type="text" name="username" placeholder="User name">
-            <input type="email" name="email" placeholder="Email Address">
-            <input type="address" name="address" placeholder="Address">
-            <input type="number" name="phone" placeholder="Phone number">
-            <button class="" type="submit">Submit</button>
+    <div class="wapper">
+        <h4 style="
+    color: #25C296;
+    font-family: sans-serif;">Insert Userdata</h4>
+        <form action="/insert" method="post">
+            <label>User name</label><br>
+            <input type="text" name="username" placeholder="User name"><br>
+            <label>Email Address</label><br>
+            <input type="email" name="email" placeholder="Email Address"><br>
+            <label>Address</label><br>
+            <input type="address" name="address" placeholder="Address"><br>
+            <label>Phone Number</label><br>
+            <input type="number" name="phone" placeholder="Phone number"><br>
+            <button class="submit-btn" type="submit">Submit</button>
         </form>
 
 

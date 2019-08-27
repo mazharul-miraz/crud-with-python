@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>INSERT</title>
-	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/spectre.css')}}">
-	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+    <title>UPDATE</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
 </head>
+
 <body>
+    <div class="wapper">
+        <h4 style="
+		color: #25C296;
+		font-family: sans-serif;">Update Userdata</h4>
+        <form action="/update" method="post">
+            <label>User name</label><br>
+            <input type="text" name="username" placeholder="User name"><br>
+            <label>Email Address</label><br>
+            <input type="email" name="email" placeholder="Email Address"><br>
+            <label>Address</label><br>
+            <input type="address" name="address" placeholder="Address"><br>
+            <label>Phone Number</label><br>
+            <input type="number" name="phone" placeholder="Phone number"><br>
+            <label>Pick date </label><br>
+            <input type="date" name="datetime-local"><br>
+            <button class="" type="submit">Save & save</button>
+        </form>
 
 
-
+    </div>
 
 </body>
+
 </html>

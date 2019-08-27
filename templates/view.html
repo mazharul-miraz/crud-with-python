@@ -32,6 +32,7 @@
                     <a class="btn" href="/update">Edit</a>
                 </div>
             </div>
+            {% for u in user %}
             <table class="table view-table">
                 <thead>
                     <tr>
@@ -44,21 +45,15 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>kate middleton</td>
-                        <td>info@middleton.com</td>
-                        <td>Catherine, Duchess of Cambridge</td>
-                        <td>(+47) 478544 64)</td>
-                        <td>Edit</td>
-                    </tr>
-                    <tr>
-                        <td>maniac garage</td>
-                        <td>contact@garage.com</td>
-                        <td>Catherine, Duchess of Cambridge</td>
-                        <td>(+88) 45874 64)</td>
+                        <td>{{u.name}}</td>
+                        <td>{{u.email}}</td>
+                        <td>{{u.address}}</td>
+                        <td>{{u.phone}}</td>
                         <td>Edit</td>
                     </tr>
                 </tbody>
             </table>
+            {% endfor %}
         </div>
 
     </div>

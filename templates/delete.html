@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>INSERT</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+
+<body>
+    <div class="wapper">
+        <h4 style="
+		color: #25C296;
+		font-family: sans-serif;">Delete Userdata</h4>
+        <form action="/delete" method="post">
+            <label>Email Address</label><br>
+            <input type="email" name="email" placeholder="Email Address"><br>
+            <button class="" type="submit">Delete</button>
+        </form>
+
+
+    </div>
+
+</body>
+
+</html>

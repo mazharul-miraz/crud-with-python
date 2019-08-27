@@ -7,12 +7,6 @@ body {
     background-color: #FAFAFA
 }
 
-app-main {
-    margin: 0 auto;
-    padding: 20px 25px;
-    overflow: hidden;
-}
-
 .wapper {
     width: 80%;
     margin: 0 auto;
