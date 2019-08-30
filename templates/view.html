@@ -28,7 +28,7 @@
                     </div>
                 </div>
                 <div class="con">
-                    <a class="btn" href="/insert">Add New Record</a>
+                    <a class="btn" href="/insert">New Record</a>
                     <a class="btn" href="/update">Edit</a>
                 </div>
             </div>
@@ -36,6 +36,7 @@
             <table class="table view-table">
                 <thead>
                     <tr>
+                        <th>ID</th>
                         <th>Name</th>
                         <th>Email</th>
                         <th>Address</th>
@@ -44,20 +45,14 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>hhi</td>
-                        <td>ihi</td>
-                        <td>hihi</td>
-                        <td>hihi</td>
-                        <td>Edit</td>
-                    </tr>
                     {% for u in user %}
                     <tr>
+                        <td>{{u._id}}</td>
                         <td>{{u.name}}</td>
                         <td>{{u.email}}</td>
                         <td>{{u.address}}</td>
                         <td>{{u.phone}}</td>
-                        <td>Edit</td>
+                        <td><a class="btn" href="/update/{{u._id}}">Edit</a></td>
                     </tr>
                     {% endfor %}
                 </tbody>
