@@ -32,7 +32,7 @@
                     <a class="btn" href="/update">Edit</a>
                 </div>
             </div>
-            {% for u in user %}
+
             <table class="table view-table">
                 <thead>
                     <tr>
@@ -45,15 +45,24 @@
                 </thead>
                 <tbody>
                     <tr>
+                        <td>hhi</td>
+                        <td>ihi</td>
+                        <td>hihi</td>
+                        <td>hihi</td>
+                        <td>Edit</td>
+                    </tr>
+                    {% for u in user %}
+                    <tr>
                         <td>{{u.name}}</td>
                         <td>{{u.email}}</td>
                         <td>{{u.address}}</td>
                         <td>{{u.phone}}</td>
                         <td>Edit</td>
                     </tr>
+                    {% endfor %}
                 </tbody>
             </table>
-            {% endfor %}
+
         </div>
 
     </div>

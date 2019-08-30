@@ -13,7 +13,13 @@ app = Flask(__name__)
 
 @app.route('/')
 def appview():
-    return render_template('view.html')
+    users = db.user.find()
+    user_list = []
+    for i in users:
+        user_list.append(i)
+
+
+    return render_template('view.html', user = user_list)
 
 
 
@@ -53,7 +59,10 @@ def InsertInfo(request):
         "address": UserAddress,
         "phone": UserPhone,
     })
-    return "Registration successfull"
+
+
+
+    return redirect(url_for('appview'))
     # return  render_template('userdash.html')
     # return redirect(url_for('appview' ))
 
