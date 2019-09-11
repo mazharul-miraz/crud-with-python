@@ -94,13 +94,19 @@ def update(username):
 
 
 #============ DELETE START #============#
+@app.route('/delete/<username>', methods=['POST', 'GET'])
+def delete(username):
+    if request.method == 'POST':
+        return(userdel)
+    else:
+        return render_template('404_page.html', username=username)
 
-@app.route('/delete')
-def delete():
-    return render_template('delete.html')
+
+def userdel():
+    deluser = db.notes.delete_one({"_id": ObjectId(username)})
+    return redirect("/appview")
+
 
 #============ DELETE END #============#
-
-
 if __name__ == '__main__':
     app.run(debug=True)
