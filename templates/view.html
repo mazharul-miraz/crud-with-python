@@ -10,7 +10,7 @@
     <div class="wapper">
         <header class="navbar">
             <section class="navbar-section">
-                <a href="/view" class="btn btn-link">Home</a>
+                <a href="/" class="btn btn-link">Home</a>
             </section>
             <section class="navbar-center">
                 <h5>FLASK CRUD</h5>
@@ -53,7 +53,7 @@
                         <td>{{u.address}}</td>
                         <td>{{u.phone}}</td>
                         <td><a class="btn" href="/update/{{u._id}}">Edit</a></td>
-                        <td><a class="btn" href="">delete</a></td>
+                        <td><a class="btn" href="/delete/<username>">delete</a></td>
                     </tr>
                     {% endfor %}
                 </tbody>
